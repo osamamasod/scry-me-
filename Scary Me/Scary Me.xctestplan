@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "F19D19A7-14BE-4AD7-9F6D-6B4E2930714F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "environmentVariableEntries" : [
+      {
+        "key" : "IDEPreferLogStreaming",
+        "value" : "yes"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Scary Me.xcodeproj",
+      "identifier" : "42632D982C147295009B4B8E",
+      "name" : "Scary Me"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

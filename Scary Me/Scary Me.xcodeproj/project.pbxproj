@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421168832C33CD47004A93C8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421168822C33CD47004A93C8 /* CircleView.swift */; };
+		421168852C33F496004A93C8 /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421168842C33F496004A93C8 /* SwipeCardStack.swift */; };
+		421168872C33F4A9004A93C8 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421168862C33F4A9004A93C8 /* UserCardView.swift */; };
+		423588F42C23FCB0006EE341 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423588F32C23FCB0006EE341 /* MainScreen.swift */; };
+		423588F82C24049A006EE341 /* CreateProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423588F72C24049A006EE341 /* CreateProfileViewModel.swift */; };
+		423B36402C2ABAC70024B109 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423B363F2C2ABAC70024B109 /* ImageDownloader.swift */; };
+		42411B142C305F9900CF9ED5 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42411B132C305F9900CF9ED5 /* DataModels.swift */; };
+		42593DF22C19BCA100BD2805 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42593DF12C19BCA100BD2805 /* NetworkService.swift */; };
+		42593DF42C19C01000BD2805 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42593DF32C19C01000BD2805 /* AuthService.swift */; };
+		42632D9D2C147295009B4B8E /* Scary_MeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42632D9C2C147295009B4B8E /* Scary_MeApp.swift */; };
+		42632D9F2C147295009B4B8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42632D9E2C147295009B4B8E /* ContentView.swift */; };
+		42632DA12C147297009B4B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42632DA02C147297009B4B8E /* Assets.xcassets */; };
+		42632DA42C147297009B4B8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42632DA32C147297009B4B8E /* Preview Assets.xcassets */; };
+		42632DAE2C14736C009B4B8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42632DAD2C14736C009B4B8E /* Launch Screen.storyboard */; };
+		42632DB42C147E88009B4B8E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42632DB32C147E88009B4B8E /* SignUpView.swift */; };
+		42632DB62C147FE2009B4B8E /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42632DB52C147FE2009B4B8E /* SignUpViewModel.swift */; };
+		428764FC2C3418F10076E177 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428764FB2C3418F00076E177 /* UserProfileView.swift */; };
+		428764FE2C343B4E0076E177 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428764FD2C343B4E0076E177 /* ImageLoader.swift */; };
+		429120FA2C14D480008B545F /* signInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429120F92C14D480008B545F /* signInView.swift */; };
+		429120FE2C14D826008B545F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429120FD2C14D826008B545F /* SignInViewModel.swift */; };
+		42B184E82C25ECEE00A125F2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B184E72C25ECEE00A125F2 /* NetworkManager.swift */; };
+		42CE13A62C1A377A00BBA6C8 /* Scary-Me-Info.plist in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CE13A52C1A377A00BBA6C8 /* Scary-Me-Info.plist */; };
+		42D148BE2C17E8D3002BCE79 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D148BD2C17E8D3002BCE79 /* ImagePicker.swift */; };
+		42D148D32C17F1A0002BCE79 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D148D22C17F19F002BCE79 /* FloatingTextField.swift */; };
+		42DAB34B2C30B1EC008533D3 /* TinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAB34A2C30B1EC008533D3 /* TinderView.swift */; };
+		42E2DF732C3152BB00C9CF93 /* TinderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E2DF722C3152BB00C9CF93 /* TinderService.swift */; };
+		42E2DF752C3152D800C9CF93 /* TinderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E2DF742C3152D800C9CF93 /* TinderViewModel.swift */; };
+		42E2DF7A2C316B2000C9CF93 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42E2DF792C316B2000C9CF93 /* SDWebImageSwiftUI */; };
+		42F541872C163820002A0EAF /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F541862C163820002A0EAF /* CreateProfileView.swift */; };
+		42FDB5C22C2AAA6000DD037F /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDB5C12C2AAA6000DD037F /* EditProfileView.swift */; };
+		42FDB5C42C2AAC3D00DD037F /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDB5C32C2AAC3D00DD037F /* EditProfileViewModel.swift */; };
+		42FDB5C62C2AAF2600DD037F /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FDB5C52C2AAF2600DD037F /* ProfileService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		421168822C33CD47004A93C8 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		421168842C33F496004A93C8 /* SwipeCardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStack.swift; sourceTree = "<group>"; };
+		421168862C33F4A9004A93C8 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
+		423588F32C23FCB0006EE341 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		423588F72C24049A006EE341 /* CreateProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewModel.swift; sourceTree = "<group>"; };
+		423B363F2C2ABAC70024B109 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		42411B132C305F9900CF9ED5 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		42593DF12C19BCA100BD2805 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		42593DF32C19C01000BD2805 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		42632D992C147295009B4B8E /* Scary Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scary Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42632D9C2C147295009B4B8E /* Scary_MeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scary_MeApp.swift; sourceTree = "<group>"; };
+		42632D9E2C147295009B4B8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42632DA02C147297009B4B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42632DA32C147297009B4B8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42632DAD2C14736C009B4B8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		42632DB32C147E88009B4B8E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		42632DB52C147FE2009B4B8E /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		4263A1BA2C247594004C55FA /* Scary Me.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Scary Me.xctestplan"; sourceTree = "<group>"; };
+		428764FB2C3418F00076E177 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		428764FD2C343B4E0076E177 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		429120F92C14D480008B545F /* signInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInView.swift; sourceTree = "<group>"; };
+		429120FD2C14D826008B545F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		42B184E72C25ECEE00A125F2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		42CE13A52C1A377A00BBA6C8 /* Scary-Me-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Scary-Me-Info.plist"; sourceTree = SOURCE_ROOT; };
+		42D148BD2C17E8D3002BCE79 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		42D148D22C17F19F002BCE79 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		42DAB34A2C30B1EC008533D3 /* TinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderView.swift; sourceTree = "<group>"; };
+		42E2DF722C3152BB00C9CF93 /* TinderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderService.swift; sourceTree = "<group>"; };
+		42E2DF742C3152D800C9CF93 /* TinderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewModel.swift; sourceTree = "<group>"; };
+		42E2DF772C315E4100C9CF93 /* SDWebImageSwiftUI-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SDWebImageSwiftUI-master"; path = "../../../Downloads/SDWebImageSwiftUI-master"; sourceTree = "<group>"; };
+		42F541862C163820002A0EAF /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		42FDB5C12C2AAA6000DD037F /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		42FDB5C32C2AAC3D00DD037F /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		42FDB5C52C2AAF2600DD037F /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42632D962C147295009B4B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CE13A62C1A377A00BBA6C8 /* Scary-Me-Info.plist in Frameworks */,
+				42E2DF7A2C316B2000C9CF93 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4214FDD82C23321800AB987B /* component */ = {
+			isa = PBXGroup;
+			children = (
+				42D148D22C17F19F002BCE79 /* FloatingTextField.swift */,
+				42D148BD2C17E8D3002BCE79 /* ImagePicker.swift */,
+				423B363F2C2ABAC70024B109 /* ImageDownloader.swift */,
+				428764FD2C343B4E0076E177 /* ImageLoader.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		4214FDDA2C23324500AB987B /* servers */ = {
+			isa = PBXGroup;
+			children = (
+				42593DF12C19BCA100BD2805 /* NetworkService.swift */,
+				42593DF32C19C01000BD2805 /* AuthService.swift */,
+				42B184E72C25ECEE00A125F2 /* NetworkManager.swift */,
+				42FDB5C52C2AAF2600DD037F /* ProfileService.swift */,
+				42E2DF722C3152BB00C9CF93 /* TinderService.swift */,
+			);
+			path = servers;
+			sourceTree = "<group>";
+		};
+		42632D902C147295009B4B8E = {
+			isa = PBXGroup;
+			children = (
+				4263A1BA2C247594004C55FA /* Scary Me.xctestplan */,
+				42632D9B2C147295009B4B8E /* Scary Me */,
+				42632D9A2C147295009B4B8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42632D9A2C147295009B4B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42632D992C147295009B4B8E /* Scary Me.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42632D9B2C147295009B4B8E /* Scary Me */ = {
+			isa = PBXGroup;
+			children = (
+				42632D9C2C147295009B4B8E /* Scary_MeApp.swift */,
+				42632D9E2C147295009B4B8E /* ContentView.swift */,
+				42E2DF772C315E4100C9CF93 /* SDWebImageSwiftUI-master */,
+				42CE13A52C1A377A00BBA6C8 /* Scary-Me-Info.plist */,
+				4214FDDA2C23324500AB987B /* servers */,
+				4214FDD82C23321800AB987B /* component */,
+				42632DAC2C1472B5009B4B8E /* viewModels */,
+				42632DAB2C1472AA009B4B8E /* Models */,
+				42632DAA2C1472A0009B4B8E /* views */,
+				42632DA02C147297009B4B8E /* Assets.xcassets */,
+				42632DA22C147297009B4B8E /* Preview Content */,
+				42632DAD2C14736C009B4B8E /* Launch Screen.storyboard */,
+			);
+			path = "Scary Me";
+			sourceTree = "<group>";
+		};
+		42632DA22C147297009B4B8E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				42632DA32C147297009B4B8E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42632DAA2C1472A0009B4B8E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				42632DB32C147E88009B4B8E /* SignUpView.swift */,
+				429120F92C14D480008B545F /* signInView.swift */,
+				42F541862C163820002A0EAF /* CreateProfileView.swift */,
+				423588F32C23FCB0006EE341 /* MainScreen.swift */,
+				42FDB5C12C2AAA6000DD037F /* EditProfileView.swift */,
+				42DAB34A2C30B1EC008533D3 /* TinderView.swift */,
+				421168822C33CD47004A93C8 /* CircleView.swift */,
+				421168842C33F496004A93C8 /* SwipeCardStack.swift */,
+				421168862C33F4A9004A93C8 /* UserCardView.swift */,
+				428764FB2C3418F00076E177 /* UserProfileView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		42632DAB2C1472AA009B4B8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42411B132C305F9900CF9ED5 /* DataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42632DAC2C1472B5009B4B8E /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42632DB52C147FE2009B4B8E /* SignUpViewModel.swift */,
+				429120FD2C14D826008B545F /* SignInViewModel.swift */,
+				423588F72C24049A006EE341 /* CreateProfileViewModel.swift */,
+				42FDB5C32C2AAC3D00DD037F /* EditProfileViewModel.swift */,
+				42E2DF742C3152D800C9CF93 /* TinderViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42632D982C147295009B4B8E /* Scary Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42632DA72C147297009B4B8E /* Build configuration list for PBXNativeTarget "Scary Me" */;
+			buildPhases = (
+				42632D952C147295009B4B8E /* Sources */,
+				42632D962C147295009B4B8E /* Frameworks */,
+				42632D972C147295009B4B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scary Me";
+			packageProductDependencies = (
+				42E2DF792C316B2000C9CF93 /* SDWebImageSwiftUI */,
+			);
+			productName = "Scary Me";
+			productReference = 42632D992C147295009B4B8E /* Scary Me.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42632D912C147295009B4B8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					42632D982C147295009B4B8E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 42632D942C147295009B4B8E /* Build configuration list for PBXProject "Scary Me" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42632D902C147295009B4B8E;
+			packageReferences = (
+				42E2DF782C316B2000C9CF93 /* XCLocalSwiftPackageReference "../../Downloads/SDWebImageSwiftUI-master" */,
+			);
+			productRefGroup = 42632D9A2C147295009B4B8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42632D982C147295009B4B8E /* Scary Me */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42632D972C147295009B4B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42632DAE2C14736C009B4B8E /* Launch Screen.storyboard in Resources */,
+				42632DA42C147297009B4B8E /* Preview Assets.xcassets in Resources */,
+				42632DA12C147297009B4B8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42632D952C147295009B4B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42593DF22C19BCA100BD2805 /* NetworkService.swift in Sources */,
+				428764FC2C3418F10076E177 /* UserProfileView.swift in Sources */,
+				42FDB5C22C2AAA6000DD037F /* EditProfileView.swift in Sources */,
+				421168852C33F496004A93C8 /* SwipeCardStack.swift in Sources */,
+				42632D9F2C147295009B4B8E /* ContentView.swift in Sources */,
+				42B184E82C25ECEE00A125F2 /* NetworkManager.swift in Sources */,
+				42DAB34B2C30B1EC008533D3 /* TinderView.swift in Sources */,
+				423B36402C2ABAC70024B109 /* ImageDownloader.swift in Sources */,
+				42FDB5C42C2AAC3D00DD037F /* EditProfileViewModel.swift in Sources */,
+				42593DF42C19C01000BD2805 /* AuthService.swift in Sources */,
+				42632DB42C147E88009B4B8E /* SignUpView.swift in Sources */,
+				423588F42C23FCB0006EE341 /* MainScreen.swift in Sources */,
+				42D148BE2C17E8D3002BCE79 /* ImagePicker.swift in Sources */,
+				428764FE2C343B4E0076E177 /* ImageLoader.swift in Sources */,
+				429120FE2C14D826008B545F /* SignInViewModel.swift in Sources */,
+				42F541872C163820002A0EAF /* CreateProfileView.swift in Sources */,
+				42632DB62C147FE2009B4B8E /* SignUpViewModel.swift in Sources */,
+				42FDB5C62C2AAF2600DD037F /* ProfileService.swift in Sources */,
+				421168872C33F4A9004A93C8 /* UserCardView.swift in Sources */,
+				42E2DF752C3152D800C9CF93 /* TinderViewModel.swift in Sources */,
+				42632D9D2C147295009B4B8E /* Scary_MeApp.swift in Sources */,
+				42D148D32C17F1A0002BCE79 /* FloatingTextField.swift in Sources */,
+				423588F82C24049A006EE341 /* CreateProfileViewModel.swift in Sources */,
+				421168832C33CD47004A93C8 /* CircleView.swift in Sources */,
+				429120FA2C14D480008B545F /* signInView.swift in Sources */,
+				42E2DF732C3152BB00C9CF93 /* TinderService.swift in Sources */,
+				42411B142C305F9900CF9ED5 /* DataModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42632DA52C147297009B4B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42632DA62C147297009B4B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42632DA82C147297009B4B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scary Me/Preview Content\"";
+				DEVELOPMENT_TEAM = T68694KW67;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scary-Me-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take profile pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select profile pictures.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osamaMM.Scary-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42632DA92C147297009B4B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scary Me/Preview Content\"";
+				DEVELOPMENT_TEAM = T68694KW67;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Scary-Me-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take profile pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select profile pictures.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.osamaMM.Scary-Me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42632D942C147295009B4B8E /* Build configuration list for PBXProject "Scary Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42632DA52C147297009B4B8E /* Debug */,
+				42632DA62C147297009B4B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42632DA72C147297009B4B8E /* Build configuration list for PBXNativeTarget "Scary Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42632DA82C147297009B4B8E /* Debug */,
+				42632DA92C147297009B4B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		42E2DF782C316B2000C9CF93 /* XCLocalSwiftPackageReference "../../Downloads/SDWebImageSwiftUI-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Downloads/SDWebImageSwiftUI-master";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42E2DF792C316B2000C9CF93 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42632D912C147295009B4B8E /* Project object */;
+}
